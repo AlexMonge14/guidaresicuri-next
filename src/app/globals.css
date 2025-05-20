@@ -120,6 +120,15 @@ body {
   clip-path: polygon(0% 20%, 100% 20%, 90% 80%, 0% 80%);
 }
 
+.angled-box-main-inverted {
+  color: #FFFFFF;
+  padding: 2rem;
+  font-family: 'Anton', sans-serif;
+  font-style: italic;
+  max-width: 900px;
+  clip-path: polygon(100% 20%, 0% 20%, 10% 80%, 100% 80%);
+}
+
 .angled-box-right {
   padding: 0.5rem 1rem;
   font-family: 'Anton', sans-serif;
@@ -134,7 +143,7 @@ body {
   font-family: 'Anton', sans-serif;
   font-style: italic;
   width: 80%;
-  margin-left: 20%;
+  margin-left: 21%;
   clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
@@ -144,7 +153,7 @@ body {
   margin-left: 2%;
 
   @media (min-width: 992px) {
-    font-size: 16pt;
+    font-size: 13pt;
   }
 }
 
@@ -157,33 +166,136 @@ body {
 
 /* Pulsante personalizzato */
 .btn-custom {
-  background-color: #000000;  /* Rosso energico per CTA */
-  border: 2px solid #FCE000;
-  color: #FCE000;
-  transition: 0.3s;
+  background-color: #FCE000;            /* Inversione colori al passaggio */
+  color: #000000;            /* Bordo giallo acceso */                      /* Testo giallo */
+  font-family: 'Anton', sans-serif;     /* Font coerente con headings */
+  text-transform: uppercase;            /* Stile sportivo/forte */
+  padding: 0.6rem 1.2rem;               /* Pulsante robusto */
+  font-size: 1rem;                      /* Dimensione leggibile */
+  letter-spacing: 0.5px;                /* Un po' di spazio tra lettere */
+  transition: all 0.3s ease;
+  border-radius: 0;                     /* Coerenza con le forme spigolose */
 }
+
+@media (max-width: 576px) {
+  .btn-custom {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+  }
+}
+
 .btn-custom:hover {
-  background-color: #FCE000;
-  color: #000000;
+  background-color: #000000;    
+  color: #FCE000;         /* Sfondo nero */
+  border: 2px solid #FCE000;                        /* Testo nero */
+  transform: scale(1.05);               /* Leggera animazione */
+  box-shadow: 0 0 10px #FCE000;         /* Glow coerente con il giallo */
 }
+
+.btn-custom-inverse {
+  background-color: #000000;            /* Sfondo nero */
+  color: #FCE000;                       /* Testo giallo */
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  border-radius: 0;
+  border: 2px solid #000000;
+}
+
+@media (max-width: 576px) {
+  .btn-custom-inverse {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+  }
+}
+
+.btn-custom-inverse:hover {
+  background-color: #FCE000;           /* Sfondo giallo */
+  color: #000000;                      /* Testo nero */
+  border: 2px solid #FCE000;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #000000;
+}
+
+
+.responsive-gap-margin {
+  gap: 3rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 992px) { /* md */
+  .responsive-gap-margin {
+    gap: 2.5rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) { /* sm */
+  .responsive-gap-margin {
+    gap: 2rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) { /* xs */
+  .responsive-gap-margin {
+    gap: 2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 400px) { /* xs */
+  .responsive-gap-margin {
+    gap: 10%;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+
 
 /* Titolo dinamico */
 .custom-heading {
-  font-size: 3.5rem;
+  font-size: 2.4rem;
   font-style: italic;
-  font-weight: bold;
-  color: #FFFFFF; /* Rosso di palette */
-  text-shadow:
-      2px 2px 4px rgba(0,0,0,0.7),
-      -2px -2px 4px rgba(0,0,0,0.7);
-  line-height: 1.1;
 }
+
+@media (max-width: 1024px) {
+  .custom-heading {
+    font-size: 2rem; /* tablet e sotto */
+  }
+}
+
+@media (max-width: 576px) {
+  .custom-heading {
+    font-size: 1.3rem; /* smartphone */
+  }
+}
+
 
 /* Testo evidenziato */
 .custom-text {
   color: #FCE000;
 }
 
+@media (min-width: 992px) {
+  .custom-form {
+    width: 40%;
+  }
+}
 /* Footer */
 footer {
   background-color: #1A1A1A;

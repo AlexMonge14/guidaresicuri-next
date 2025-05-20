@@ -22,28 +22,32 @@ export default function Card({ titleRight, titleLeft, children }: CardProps) {
     <motion.div
       whileHover={{ scale: 1.02 }}
       transition={{ type: 'spring', stiffness: 150 }}
-      className="card bg-white text-dark h-100 shadow rounded overflow-hidden"
+      className="card bg-white h-100 shadow rounded overflow-hidden"
       onClick={() => setExpanded(!expanded)}
       style={{ cursor: 'pointer' }}
     >
       <div
-        className="angled-box-right text-white text-center"
-        style={{ backgroundColor: titleRight.bgColor }}
+        className="angled-box-right text-center"
+        style={{
+          backgroundColor: titleRight.bgColor,
+          color: titleRight.color ?? 'white',
+        }}
       >
         <h5 className="m-0 py-2">{titleRight.text}</h5>
       </div>
       <div
-        className="angled-box-left text-white text-center"
+        className="angled-box-left text-center"
         style={{
           backgroundColor: titleLeft.bgColor,
-          color: titleLeft.color || '#fff',
+          color: titleLeft.color ?? 'white',
         }}
       >
         <h5 className="m-0 py-2">{titleLeft.text}</h5>
       </div>
-      <div className="card-body text-center">
-        <p>{children}</p>
+      <div className="card-body text-center text-dark">
+        {children}
       </div>
     </motion.div>
   );
 }
+
