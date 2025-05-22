@@ -63,7 +63,7 @@ function InfoBlock({
   const angledClass = heading.includes('AZIENDA') ? 'angled-box-left' : 'angled-box-right';
 
   return (
-    <div className="col-12 col-xl-6 text-center mt-4 mb-4">
+    <div className="col-12 col-xl-6 text-center mt-2 mb-2">
       <div
         className={`mb-3 text-white ${angledClass} text-center`}
         style={{
@@ -109,7 +109,7 @@ function InfoBlock({
 
 export default function PrivatoAziendaSection() {
   return (
-    <section className="pt-5 text-white">
+    <section className="pt-3 pt-lg-5 text-white">
       <div className="container">
         <div className="row">
           <InfoBlock

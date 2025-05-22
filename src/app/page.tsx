@@ -4,6 +4,8 @@ import Card from "./components/Card";
 import Link from "next/link";
 import PrivatoAziendaSection from "./components/PrivatoAziendaSection";
 import SponsorCard from './components/SponsorCard';
+import ContactForm from "./components/ContactForm";
+import ScrollToHash from "./components/ScrollToHash";
 
 const sponsors = [
   { id: 1, name: 'Pirelli', logoUrl: '/images/pirelli.png' },
@@ -266,7 +268,8 @@ export default function Home() {
         </div>
     </section>
     
-    <section className="py-2 bg-dark text-white">
+    <ScrollToHash />
+    <section id="contatti" className="py-2 bg-dark text-white">
       <div className="container">
         {/* Titolo */}
         <div className="mb-5">
@@ -282,10 +285,10 @@ export default function Home() {
         </div>
 
         {/* RIGA CON INFO CONTATTI A SINISTRA E FORM A DESTRA */}
-        <div className="row gy-5">
+        <div className="row mx-lg-3">
           {/* COLONNA SINISTRA */}
-          <div className="col-12 col-lg-6 text-center text-lg-start mx-lg-4">
-            <div className="mb-4 d-flex flex-wrap text-lg-start gap-4">
+          <div className="col-12 col-lg-6 text-center text-lg-start">
+            <div className="mb-4 d-flex flex-wrap justify-content-center justify-content-lg-start text-lg-start gap-4">
               {/* Telefono */}
               <div style={{ minWidth: '200px' }}>
                 <h5 className="custom-text">Telefono</h5>
@@ -315,7 +318,7 @@ export default function Home() {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  style={{ border: 0, width: '50%', height: '50%' }}
+                  style={{ border: 0, width: '70%', height: '100%' }}
                 />
               </div>
             </div>
@@ -350,34 +353,7 @@ export default function Home() {
           </div>
 
           {/* COLONNA DESTRA - FORM */}
-          <div className="col-12 col-lg-6 custom-form">
-            <form>
-              <div className="mb-3">
-                <label htmlFor="name" className="form-label">
-                  Nome
-                </label>
-                <input type="text" className="form-control" id="name" placeholder="Il tuo nome" />
-              </div>
-
-              <div className="mb-3">
-                <label htmlFor="email" className="form-label">
-                  Email
-                </label>
-                <input type="email" className="form-control" id="email" placeholder="La tua email" />
-              </div>
-
-              <div className="mb-3">
-                <label htmlFor="message" className="form-label">
-                  Messaggio
-                </label>
-                <textarea className="form-control" id="message" rows={3} placeholder="Scrivi qui il tuo messaggio"></textarea>
-              </div>
-
-              <button type="submit" className="btn btn-custom px-4 my-4">
-                Invia
-              </button>
-            </form>
-          </div>
+          <ContactForm />
         </div>
 
       </div>

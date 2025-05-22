@@ -24,7 +24,6 @@ export default function Card({ titleRight, titleLeft, children }: CardProps) {
       transition={{ type: 'spring', stiffness: 150 }}
       className="card bg-white h-100 shadow rounded overflow-hidden"
       onClick={() => setExpanded(!expanded)}
-      style={{ cursor: 'pointer' }}
     >
       <div
         className="angled-box-right text-center"

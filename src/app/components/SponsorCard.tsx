@@ -9,7 +9,7 @@ export default function SponsorCard({ name, logoUrl }: SponsorCardProps) {
   return (
     <div
       title={name}
-      className="d-block"
+      className="d-block sponsor-card"
       style={{ maxWidth: 150, margin: 'auto' }}
     >
       <img

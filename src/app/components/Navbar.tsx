@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { AnimatePresence, motion, Variants } from 'framer-motion';
+import Link from 'next/link';
 
 const menuVariants: Variants = {
   hidden: { height: 0, opacity: 0 },
@@ -39,7 +40,7 @@ export default function Navbar() {
       }}
     >
       <div className="container d-flex align-items-center">
-        <a className="navbar-brand d-flex align-items-center" href="/">
+        <Link className="navbar-brand d-flex align-items-center" href="/">
           <img
             src="/images/logo.png"
             alt="Logo"
@@ -47,7 +48,7 @@ export default function Navbar() {
             className="me-2"
           />
           <span className="text-white">Guidare Sicuri ASD</span>
-        </a>
+        </Link>
 
         {/* HAMBURGER */}
         <button
@@ -100,17 +101,20 @@ export default function Navbar() {
               exit="exit"
             >
               <ul className="navbar-nav ms-auto">
-                {['Chi Siamo', 'La Struttura', 'Contatti'].map((label) => (
-                  <motion.li
-                    key={label}
-                    className="nav-item"
-                    variants={itemVariants}
-                  >
+              {['Chi Siamo', 'La Struttura', 'Contatti'].map((label) => (
+                <motion.li key={label} className="nav-item" variants={itemVariants}>
+                  {label === 'Contatti' ? (
+                    <Link href="/#contatti" className="nav-link text-white" onClick={() => setIsOpen(false)}>
+                      {label}
+                    </Link>
+                  ) : (
                     <a className="nav-link text-white" href="#">
                       {label}
                     </a>
-                  </motion.li>
-                ))}
+                  )}
+                </motion.li>
+              ))}
+
 
                 {/* CORSI Dropdown */}
                 <motion.li className="nav-item dropdown" variants={itemVariants}>
