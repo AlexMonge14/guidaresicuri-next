@@ -16,7 +16,7 @@ export default function SponsorCard({ name, logoUrl }: SponsorCardProps) {
         src={logoUrl}
         alt={name}
         className="img-fluid"
-        style={{ maxHeight: 80, objectFit: 'contain' }}
+        style={{ maxHeight: 100, objectFit: 'contain' }}
       />
     </div>
   );

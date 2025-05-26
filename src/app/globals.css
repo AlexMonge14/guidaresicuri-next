@@ -20,6 +20,22 @@ body {
   color: #FCE000 !important;
 }
 
+.text-responsive {
+  font-size: 15px; /* default per schermi piccoli */
+}
+
+@media (min-width: 576px) {
+  .text-responsive {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 768px) {
+  .text-responsive {
+    font-size: 19px;
+  }
+}
+
 .custom-container {
   background-color: #1A1A1A;
   height: calc(90vh - 70px);
@@ -305,7 +321,7 @@ body {
   border-radius: 0;
   background-color: transparent;
   box-shadow: none;
-  padding: 12px 0; 
+  padding: 0px 0; 
   min-height: 80px;  
   color: #FFFFFF; /* opzionale, se hai sfondo scuro */
   font-size: 1rem;

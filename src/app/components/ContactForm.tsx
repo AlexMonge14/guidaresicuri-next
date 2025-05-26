@@ -1,14 +1,19 @@
 'use client';
 
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import PrivacyModal from './PrivacyModal';
 
 interface FormData {
   name: string;
   email: string;
   message: string;
+  privacy: boolean;
 }
 
 export default function ContactForm() {
+  const [showPrivacyModal, setShowPrivacyModal] = useState(false);
+
   const {
     register,
     handleSubmit,
@@ -37,7 +42,7 @@ export default function ContactForm() {
   return (
     <div className="col-12 col-lg-6 custom-form">
       <form onSubmit={handleSubmit(onSubmit)} noValidate>
-        <div className="mb-3">
+        <div className="mb-2">
           <input
             type="text"
             id="name"
@@ -73,11 +78,37 @@ export default function ContactForm() {
           {errors.message && <div className="invalid-feedback">{errors.message.message}</div>}
         </div>
 
+        <div className="form-check mb-3">
+          <input
+            type="checkbox"
+            id="privacy"
+            className={`form-check-input text-warning ${errors.privacy ? 'is-invalid' : ''}`}
+            {...register('privacy', { required: 'Devi accettare la privacy policy' })}
+          />
+          <label className="form-check-label" htmlFor="privacy">
+            Ho letto e accetto l’{' '}
+            <span
+              onClick={() => setShowPrivacyModal(true)}
+              style={{ color: '#FCE000', cursor: 'pointer', textDecoration: 'underline' }}
+            >
+              informativa sulla privacy
+            </span>
+          </label>
+          {errors.privacy && <div className="invalid-feedback">{errors.privacy.message}</div>}
+        </div>
+
         <div className="d-flex justify-content-center justify-content-lg-start">
-          <button type="submit" className="btn btn-custom px-4 my-4" disabled={isSubmitting}>
+          <button
+            type="submit"
+            className="btn btn-custom px-4"
+            style={{ marginTop: '17px', marginBottom: '17px' }}
+            disabled={isSubmitting}
+          >
             {isSubmitting ? 'Invio...' : 'Invia'}
           </button>
         </div>
+
+        <PrivacyModal show={showPrivacyModal} onClose={() => setShowPrivacyModal(false)} />
       </form>
     </div>
   );

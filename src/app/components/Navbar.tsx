@@ -47,7 +47,7 @@ export default function Navbar() {
             style={{ maxWidth: '50px' }}
             className="me-2"
           />
-          <span className="text-white">Guidare Sicuri ASD</span>
+          <span className="text-white text-responsive">Guidare Sicuri ASD</span>
         </Link>
 
         {/* HAMBURGER */}
@@ -55,7 +55,7 @@ export default function Navbar() {
           onClick={toggle}
           aria-label="Toggle menu"
           className="border-0 bg-transparent"
-          style={{ zIndex: 1000 }}
+          style={{ zIndex: 1000, padding: '0.5rem'}}
         >
           <motion.div
             animate={isOpen ? 'open' : 'closed'}
@@ -64,7 +64,7 @@ export default function Navbar() {
           >
             <div
               style={{
-                width: 24,
+                width: 30,
                 height: 2,
                 backgroundColor: '#fff',
                 position: 'relative',
@@ -80,7 +80,7 @@ export default function Navbar() {
                   position: 'absolute',
                   top: 0,
                   left: 0,
-                  width: 24,
+                  width: 30,
                   height: 2,
                   backgroundColor: '#fff',
                 }}

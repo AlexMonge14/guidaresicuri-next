@@ -10,8 +10,7 @@ import ScrollToHash from "./components/ScrollToHash";
 const sponsors = [
   { id: 1, name: 'Pirelli', logoUrl: '/images/pirelli.png' },
   { id: 2, name: 'Sparco', logoUrl: '/images/Sparco.png' },
-  { id: 3, name: 'Aip Rent', logoUrl: '/images/Aiprent.png' },
-  { id: 4, name: 'Leasys', logoUrl: '/images/leasys.png' }
+  { id: 3, name: 'Aip Rent', logoUrl: '/images/Aiprent.png' }
 ];
 
 const clients= [
@@ -57,8 +56,9 @@ export default function Home() {
               src="/images/logo.png"
               alt="Logo Guidare Sicuri"
               className="mb-3 mx-auto d-block"
-              style={{ maxWidth: "130px" }} />
-            <p className="lead fs-4 mb-4">Guidare meglio. Vivere sicuri. Crescere insieme.</p>
+              style={{ maxWidth: "120px" }} />
+            <p className="lead">Non siamo fatti per stare fermi.</p>
+            <p className="lead">Muoviti con noi.</p>
           </div>
         </div>
       </div>
@@ -359,7 +359,14 @@ export default function Home() {
       </div>
     </section>
     <footer>
-    © 2025 Guidare Sicuri - Tutti i diritti riservati
+    <p>
+      © 2025 Guidare Sicuri ASD<br/> Tutti i diritti riservati.
+    </p>
+    <small>
+      Il sito è fornito “così com’è” senza garanzie. L’uso dei contenuti è consentito solo per scopi informativi.</small>
+    <br/>
+    <br/>
+    <small>Developed by Alex Mongelluzzi</small>
     </footer></>
   );
 }
