@@ -115,17 +115,17 @@ export default function PrivatoAziendaSection() {
           <InfoBlock
             heading="SEI UN PRIVATO?"
             collapseTitle="Formazione competitiva"
-            collapseText="Possiamo fissare sessioni individuali di guida sicura, con istruttori professionisti. Essendo una ASD, organizziamo anche lezioni di guida sportiva per chi vuole padroneggiare motori più performanti."
+            collapseText="Possiamo fissare sessioni individuali di guida sicura, con istruttori professionisti. Inoltre, organizziamo anche lezioni di guida sportiva per chi vuole padroneggiare motori più performanti."
             collapseCta="Scopri il programma"
-            collapseHref="#corsi"
+            collapseHref="/corsi/individuali"
             bgColor="#000000"
           />
           <InfoBlock
             heading="SEI UN'AZIENDA?"
             collapseTitle="Perché scegliere noi?"
-            collapseText="Offriamo corsi di guida sicura personalizzati per aziende, con condizioni flessibili e soluzioni pratiche. Tu non dovrai pensare a nulla, solo a coinvolgere i tuoi dipendenti! E se non puoi spostarti, ci spostiamo noi."
+            collapseText="Offriamo corsi di guida sicura personalizzati per aziende, con condizioni flessibili e soluzioni pratiche. Tu non dovrai pensare a nulla, solo a coinvolgere i tuoi dipendenti. E se non puoi spostarti, ci spostiamo noi."
             collapseCta="Scopri la nostra offerta"
-            collapseHref="#corsi"
+            collapseHref="/corsi/aziende"
             bgColor="#000000"
           />
         </div>

@@ -101,19 +101,23 @@ export default function Navbar() {
               exit="exit"
             >
               <ul className="navbar-nav ms-auto">
-              {['Chi Siamo', 'La Struttura', 'Contatti'].map((label) => (
-                <motion.li key={label} className="nav-item" variants={itemVariants}>
-                  {label === 'Contatti' ? (
-                    <Link href="/#contatti" className="nav-link text-white" onClick={() => setIsOpen(false)}>
-                      {label}
-                    </Link>
-                  ) : (
-                    <a className="nav-link text-white" href="#">
-                      {label}
-                    </a>
-                  )}
-                </motion.li>
-              ))}
+                {['Chi Siamo', 'La Struttura', 'Contatti'].map((label) => (
+                  <motion.li key={label} className="nav-item" variants={itemVariants}>
+                    {label === 'Contatti' ? (
+                      <Link href="/#contatti" className="nav-link text-white" onClick={() => setIsOpen(false)}>
+                        {label}
+                      </Link>
+                    ) : label === 'Chi Siamo' ? (
+                      <Link href="/chi-siamo" className="nav-link text-white" onClick={() => setIsOpen(false)}>
+                        {label}
+                      </Link>
+                    ) : (
+                      <Link className="nav-link text-white" href="/struttura" onClick={() => setIsOpen(false)}>
+                        {label}
+                      </Link>
+                    )}
+                  </motion.li>
+                ))}
 
 
                 {/* CORSI Dropdown */}
@@ -137,14 +141,14 @@ export default function Navbar() {
                         transition={{ duration: 0.2 }}
                       >
                         <li>
-                          <a className="dropdown-item text-white bg-dark" href="#">
+                          <Link className="dropdown-item text-white bg-dark" href="/corsi/individuali">
                             Privati
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a className="dropdown-item text-white bg-dark" href="#">
+                          <Link className="dropdown-item text-white bg-dark" href="/corsi/aziende">
                             Aziende
-                          </a>
+                          </Link>
                         </li>
                       </motion.ul>
                     )}
