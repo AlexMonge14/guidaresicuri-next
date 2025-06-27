@@ -15,7 +15,7 @@ const sponsors = [
 
 const clients= [
   { id: 1, name: 'Coca Cola Sibeg', logoUrl: '/images/sibeg.png' },
-  { id: 2, name: 'Honda', logoUrl: '/images/honda.jpg' },
+  { id: 2, name: 'Honda', logoUrl: '/images/honda.webp' },
   { id: 3, name: 'Maserati', logoUrl: '/images/maserati.png' },
   { id: 4, name: 'Alfa Romeo', logoUrl: '/images/alfaromeo.png' }
 ];
