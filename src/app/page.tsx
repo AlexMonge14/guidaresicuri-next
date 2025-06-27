@@ -1,5 +1,4 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import Image from 'next/image';
 import Card from "./components/Card";
 import Link from "next/link";
 import PrivatoAziendaSection from "./components/PrivatoAziendaSection";
@@ -16,7 +15,7 @@ const sponsors = [
 
 const clients= [
   { id: 1, name: 'Coca Cola Sibeg', logoUrl: '/images/sibeg.png' },
-  { id: 2, name: 'Zurich', logoUrl: '/images/zurich.svg' },
+  { id: 2, name: 'Honda', logoUrl: '/images/honda.jpeg' },
   { id: 3, name: 'Maserati', logoUrl: '/images/maserati.png' },
   { id: 4, name: 'Alfa Romeo', logoUrl: '/images/alfaromeo.png' }
 ];
