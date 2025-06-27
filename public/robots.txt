@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.guidaresicuriasd.it
+
+# Sitemaps
+Sitemap: https://www.guidaresicuriasd.it/sitemap.xml
