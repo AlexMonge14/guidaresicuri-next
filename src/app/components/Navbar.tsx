@@ -44,7 +44,7 @@ export default function Navbar() {
           <img
             src="/images/logo.png"
             alt="Logo"
-            style={{ maxWidth: '50px' }}
+            style={{ maxWidth: '60px' }}
             className="me-2"
           />
           <span className="text-white text-responsive">Guidare Sicuri ASD</span>

@@ -11,7 +11,11 @@ export default function Footer() {
           Questo sito non raccoglie dati personali se non tramite il modulo di contatto.
         </small>
         <small className="d-block mt-2">
-          Developed by Alex Mongelluzzi
+          Developed by 
+          <a href="mailto:AlexMonge14@outlook.com" className="ms-2 text-decoration-none">
+            <i className="bi bi-envelope-fill me-1"></i>
+            Alex Mongelluzzi
+          </a>
         </small>
       </div>
     </footer>
