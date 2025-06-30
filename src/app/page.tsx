@@ -17,7 +17,11 @@ const clients= [
   { id: 1, name: 'Coca Cola Sibeg', logoUrl: '/images/sibeg.png' },
   { id: 2, name: 'Honda', logoUrl: '/images/honda.webp' },
   { id: 3, name: 'Maserati', logoUrl: '/images/maserati.png' },
-  { id: 4, name: 'Alfa Romeo', logoUrl: '/images/alfaromeo.png' }
+  { id: 4, name: 'Alfa Romeo', logoUrl: '/images/alfaromeo.png'},
+  { id: 5, name: 'Toyota', logoUrl: '/images/toyota.png'},
+  { id: 6, name: 'Monroe', logoUrl: '/images/monroe.png'},
+  { id: 7, name: 'Zurich', logoUrl: '/images/zurich.svg'},
+  { id: 8, name: 'Stellantis', logoUrl: '/images/stellantis.webp'}
 ];
 
 export default function Home() {
@@ -231,7 +235,7 @@ export default function Home() {
           <h2 className="mb-4 mt-4 pb-3" style={{fontFamily: 'Anton'}}>I Nostri Sponsor</h2>
           <div className="row justify-content-center align-items-center">
             {sponsors.map(({ id, name, logoUrl }) => (
-              <div key={id} className="col-6 col-sm-4 col-md-3 mb-3">
+              <div key={id} className="col-6 col-sm-3 mb-4">
                 <SponsorCard name={name} logoUrl={logoUrl} />
               </div>
             ))}
@@ -241,7 +245,7 @@ export default function Home() {
           <h2 className="mb-4 mt-4 py-3" style={{fontFamily: 'Anton'}}>Abbiamo lavorato con:</h2>
           <div className="row justify-content-center align-items-center">
             {clients.map(({ id, name, logoUrl }) => (
-              <div key={id} className="col-6 col-sm-4 col-md-3 mb-3">
+              <div key={id} className="col-6 col-sm-3 mb-4">
                 <SponsorCard name={name} logoUrl={logoUrl} />
               </div>
             ))}

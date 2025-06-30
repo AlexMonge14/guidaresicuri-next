@@ -81,7 +81,7 @@ export default function StrutturaPage() {
                             titleLeft={{ text: 'ESCLUSIVE', bgColor: '#E12A29', color: '#FFFFFF' }}
                             >
                             <p>
-                                All'interno del circuito si trovano anche un <strong>hotel con piscina</strong> e <strong>ristorante</strong>,
+                                All'interno del circuito si trova anche un <strong>hotel con piscina</strong> e <strong>ristorante</strong>,
                                 ideale per organizzare <strong>eventi aziendali, giornate di teambuilding o ritiri intensivi</strong>. La struttura garantisce <strong>comfort e funzionalità</strong>, oltre che sicurezza e competenza.
                             </p>
                             </Card>

@@ -84,7 +84,7 @@ export default function IndividualiPage() {
         {/* Prima riga: prima card + video */}
         <div className="row g-4 mb-5">
           {/* Card Guida Sicura */}
-          <div className="col-12 col-lg-9">
+          <div className="col-12 col-md-6 col-lg-9">
             <div className="card h-100 border-0 shadow-lg">
               <div className="card-body d-flex flex-column">
                 <div className="d-flex align-items-center mb-3">
@@ -106,8 +106,8 @@ export default function IndividualiPage() {
           </div>
 
           {/* Video */}
-          <div className="col-12 col-lg-3">
-            <div className="card shadow-lg rounded-4 overflow-hidden h-100" style={{minHeight: "500px"}}>
+          <div className="col-12 col-md-6 col-lg-3">
+            <div className="card shadow-lg rounded-4 overflow-hidden h-100 responsive-min-height" >
               <div className="ratio h-100">
                 <video
                   autoPlay
@@ -116,7 +116,7 @@ export default function IndividualiPage() {
                   playsInline
                   className="w-100 h-100 object-fit-cover"
                 >
-                  <source src="/images/corso-completo-verticale.mp4" type="video/mp4" />
+                  <source src="/images/corso-definitivo-verticale.mp4" type="video/mp4" />
                 </video>
               </div>
             </div>

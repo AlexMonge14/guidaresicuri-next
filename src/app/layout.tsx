@@ -28,6 +28,9 @@ export const metadata: Metadata = {
     "Partecipa ai corsi di guida sicura, sportiva e avanzata con istruttori professionisti. Formazione per privati e aziende con esercitazioni pratiche in pista.",
   keywords: [
     "guida sicura",
+    "guidare sicuri",
+    "guidare sicuri asd",
+    "guida sicura Napoli",
     "corso guida sportiva",
     "teambuilding aziendale",
     "formazione alla guida",
@@ -46,6 +49,7 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
+      { url: "/favicon.ico", type: "image/x-icon" },
       { url: "/images/favicon-32x32.png", sizes: "32x32", type: "image/png" },
       { url: "/images/favicon-16x16.png", sizes: "16x16", type: "image/png" },
     ],

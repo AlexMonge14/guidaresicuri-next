@@ -373,6 +373,16 @@ body {
   vertical-align: baseline;
 }
 
+.responsive-min-height {
+  min-height: 500px;
+}
+
+@media (max-width: 768px) {
+  .responsive-min-height {
+    min-height: 800px;
+  }
+}
+
 footer {
   background-color: #1A1A1A;
   color: #FCE000;
