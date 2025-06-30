@@ -9,7 +9,7 @@ export async function POST(req: Request) {
   }
 
   const transporter = nodemailer.createTransport({
-    host: 'mail.tophost.it',
+    host: 'mail.smtp2go.com',
     port: 587,
     secure: false, // STARTTLS
     auth: {
