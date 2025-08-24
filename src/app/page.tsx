@@ -303,7 +303,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="d-flex justify-content-center justify-content-lg-start gap-5 flex-wrap my-5">
+            <div className="d-flex justify-content-center justify-content-lg-start gap-4 flex-wrap my-5">
               <Link
                 href="https://www.facebook.com/guidaresicuriasd/"
                 target="_blank"
