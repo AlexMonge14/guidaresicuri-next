@@ -30,14 +30,23 @@ Sito web ufficiale sviluppato per **Guidare Sicuri ASD**, un'associazione sporti
 Breve panoramica dell'organizzazione dei file all'interno della repository:
 
 📁 guidaresicuri-next/
+
  ┣ 📂 public/              # Risorse statiche 
+ 
  ┃ ┣ 📂 images/
+ 
  ┃ ┣ 📄 favicon.ico
+ 
  ┃ ┣ 📄 robots.txt
+ 
  ┃ ┣ 📄 sitemap-0.xml
+ 
  ┃ ┗ 📄 sitemap.xml
+ 
  ┣ 📂 src/  
+ 
  ┃ ┗ 📂 app/             # App router
+ 
      ┣ 📂 api/
      ┃ ┗ 📂 contact/         # Endpoint API per la gestione dei contatti/form
      ┣ 📂 chi-siamo/         # Pagina dedicata alla presentazione dell'associazione
@@ -48,7 +57,11 @@ Breve panoramica dell'organizzazione dei file all'interno della repository:
      ┣ 📄 layout.tsx         # Layout principale condiviso (Header/Footer globali)
      ┣ 📄 page.module.css    # Moduli CSS specifici per la Homepage
      ┗ 📄 page.tsx           # Homepage del sito
+     
  ┣ 📄 next.config.ts       # Configurazione di Next.js 
+ 
  ┣ 📄 next-sitemap.config.js # Configurazione della sitemap
+ 
  ┣ 📄 package.json         # Dipendenze e script del progetto
+ 
  ┗ 📄 tsconfig.json        # Configurazione TypeScript
